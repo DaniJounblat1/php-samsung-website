@@ -1,0 +1,138 @@
+.login,.SignUp{
+    background-color: #fff;
+    margin-top: 0;
+    
+}
+    
+.login-info,.signUp-info{
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+  border-radius: 10px;
+    width: 90%;
+    height: auto;
+   
+}
+span{
+    color:#000 ;
+}
+.login-info h2,.signUp-info h2{
+    color: #000;
+}
+.signUp-info button{
+    width: 100px;
+    color: #fff;
+    font-size: 17px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.signUp-info button:hover,.mybtn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #105f6e;
+}
+.input-group-text{
+    background-color: #1e7f92;
+    border: 1px solid #1e7f92;
+    color: #fff;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.main-color{
+    color: #1e7f92;
+}
+.main-bg{
+    background-color: #1e7f92;
+}
+.font-style{
+    font-size: 18px;
+   
+}
+.sign-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.sign-link:hover{
+    color: #1e7f92;
+    text-decoration: underline;
+}
+.brdr{
+    border-top-right-radius:4px !important;   
+    border-bottom-right-radius:4px !important;
+
+}
+#invalidAlert,#correction{
+    color:#dc3545!important;
+    margin-bottom: 20px;
+    display: none;
+}
+#validAlert{
+    color: #28a745!important;
+    margin-bottom: 20px;
+    display: none;
+}
+#alreadyExist{
+    color:#dc3545!important;
+    margin-bottom: 20px;
+    display: none;
+}
+.invalid{
+    display: none;
+}
+#correction{
+    display: none;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust the margin as per your requirement */
+  justify-content: space-between;
+  
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-bg {
+  background-color: blue;
+ margin-right: 20px ;
+ 
+ }
+
+.cancelbtn {
+  background-color: red;
+  border-radius: 5px ;
+}
+
+/* Hover styles */
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+.cancelbtn:hover {
+  background-color: darkred;
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .signUp-info{
+        width: 70% !important;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 600px) {
+    .signUp-info{
+        width: 75% !important;
+    }
+}
+@media screen and (max-width: 599px)  {
+    .signUp-info{
+        width: 80% !important;
+    }
+}

@@ -1,0 +1,258 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+		.hidden {
+			display: none;
+		}
+.model-card img {
+  max-width: 70%; 
+  padding-top: 10%;
+ object-fit: contain;
+  
+}
+img.samsung-a {
+  max-width: 80%;
+}
+
+img.samsung-z {
+  max-width: 90%;
+}
+img.samsung-s {
+  max-width: 73%;
+}
+
+img.buds2-pro {
+  max-width: 100%;
+}
+img.buds-pro {
+  max-width: 60%;
+}
+img.the-frame{
+    max-width: 75%;
+}
+
+.model-card {
+  display: inline-block;
+  width: 200px; /* Customize the width as needed */
+  height: 200px; /* Customize the height as needed */
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 10px; 
+  
+  box-sizing: border-box; 
+  overflow: hidden;
+  
+}
+.model-card.selected {
+  border: 2px solid blue; 
+}
+
+
+#serialNumberInput {
+  display: none;
+}
+.phone-models {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.phone-models button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.phone-models button:hover {
+  background-color: #ddd;
+}
+
+.phone-models button:focus {
+  outline: none;
+  box-shadow: 0 0 4px #888;
+}
+
+
+
+
+
+
+
+
+
+/* Apply styles to the entire page */
+body {
+  
+  background-color: #f2f2f2;
+  
+}
+
+/* Header styles */
+h1{
+    text-align: center;
+}
+  header {
+  background-color: #000016;
+  padding: 10px;
+  color: #fff;
+  
+}
+header a {
+text-decoration: none;
+color: #fff;}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+/* Main content styles */
+main {
+  padding: 40px 0;
+}
+
+.selection {
+  text-align: center;
+}
+
+.selection h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card.active {
+  border: 2px solid #000;
+}
+form{
+display: flex;
+justify-content: center;
+}
+/* Form styles */
+#product-form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#product-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#product-form input[type="text"] {
+  padding: 10px;
+  width: 300px;
+}
+
+#product-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #0077c8;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+.question {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding: 5px;
+}
+
+ul {
+      list-style-type: none;}
+@media screen and (max-width: 600px) {
+    .question p ,.question ul,.question li{
+        font-size: 10px;
+    }
+     .question h3{
+        font-size: 15px;
+    }
+    .faqs h1{
+        font-size: 20px;
+    }
+    .cards{
+        flex-direction: row;
+    }
+    .card {
+  width: 70px; 
+  height: 70px;
+  padding: 1px;
+  margin: 5px;
+}
+.cards h3{
+    font-size:5px ;
+    margin-top: 1px;
+}
+
+.card img{
+    margin-top:10px ;
+    
+}
+.model-card{
+    width: 6rem;
+    height: 6rem;
+    
+}
+.model-card img{
+    width: 60%; 
+  padding-top: 20%;
+}
+.model-card h4{
+font-size: 8px;
+}
+}
+

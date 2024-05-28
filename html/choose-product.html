@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Product Selection</title>
+  <link rel="stylesheet" href="../css/choose-product.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/translate.css">
+  <link rel="icon" href="../img/logo.avif" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/logo.avif" type="image/x-icon">
+  
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en', includedLanguages: 'ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Translate Button -->
+  <div id="google_translate_element" class="translate-button"></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.php">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="selection">
+      <div class="container">
+        <h1>Select a Product Category</h1>
+        <div class="cards">
+          <div class="card" id="phones">
+            <img src="../img/Phones.svg" alt="Phones">
+            <h3>Phones</h3>
+          </div>
+          <div class="card" id="smartwatches">
+            <img src="../img/Watch.svg" alt="Buds">
+            <h3>Watches</h3>
+          </div>
+          <div class="card" id="buds">
+            <img src="../img/Buds.svg" alt="TV">
+            <h3>Buds</h3>
+          </div>
+          <div class="card" id="tv">
+            <img src="../img/Tv.svg" alt="Smartwatches">
+            <h3>TV</h3>
+          </div>
+        </div>
+        <div id="models-container">
+          <!-- Model cards will be dynamically added here -->
+        </div>
+        <br> 
+        <form id="myForm" action="serialNumber.php" method="POST">
+          <div id="serial-number-field-container" class="hidden">
+            <input type="hidden" name="user_id" value="<?php echo $userUserId; ?>">
+
+
+            <label for="serial-number-field">Enter serial number:</label>
+            <input type="text" id="serial-number-field" name="serial-number-field">
+            
+            <button id="submit-button" type="submit">Submit</button>
+            <p id="serial-number-message"></p>
+          </div>
+        </form>
+        
+        <script>
+          function submitForm() {
+            var submitButton = document.getElementById('submit-button');
+            submitButton.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevent the default button click behavior
+              var serialNumberField = document.getElementById('serial-number-field');
+              var serialNumber = serialNumberField.value.trim();
+              if (serialNumber.length !== 11) {
+                document.getElementById('serial-number-message').textContent = 'Please enter a 11-digit serial number.';
+              } else {
+                document.getElementById('myForm').submit(); // Submit the form
+              }
+            });
+          }
+        
+          // Call the submitForm function to enable the button click behavior
+          submitForm();
+        </script>
+        
+        
+
+      </div>
+      <br>
+      <div class="faqs">
+        <h1>Commonly asked questions</h1>
+        <br>
+      <div class="question">
+        <h3>Q: How do I select a product category?</h3>
+        <p>A: To select a product category, follow these steps:</p>
+        <ul>
+          <li>On the page, you will see different cards representing product categories.</li>
+          <li>Click on the card corresponding to the desired product category (e.g., Phones, Smart Watches, Buds, TV).</li>
+          <li>This will reveal a form where you can enter the serial number of your product.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <h3>Q: Where can I find the serial number of my product?</h3>
+        <p>A: The serial number can usually be found on the product itself, not the box. Look for a label or engraved code on the device.</p>
+      </div>
+      <div class="question">
+        <h3>Q: What format should I use for the serial number?</h3>
+        <p>A: The serial number should be entered as an 11-digit code. Make sure to input the digits correctly as specified.</p>
+      </div>
+      <div class="question">
+        <h3>Q: What happens after I submit the product form?</h3>
+        <p>A: After submitting the form with the serial number, your request will be processed. If valid, you will receive further instructions to send your chosen product to our repair center.</p>
+      </div>
+      <div class="question">
+  <h3>Q: Can I submit multiple product repair requests at once?</h3>
+  <p>A: Yes, the product form allows for the submission of multiple product repair requests at once. You can provide the details for each product in the form and submit them together.</p>
+</div>
+
+
+    </div>
+      
+  </main>
+  <footer class="footer" id="myFooter">
+      <p class="footer-title">© 2023 Your Company. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/yourcompany"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourcompany"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/yourcompany"><i class="fab fa-facebook"></i></a>
+      </div>
+    </footer>
+    
+    </section>
+  </main> 
+  
+  <script src="../js/repair.js"></script>
+
+
+  
+</body>
+</html>

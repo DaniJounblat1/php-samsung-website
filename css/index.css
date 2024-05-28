@@ -1,0 +1,376 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+* {
+scroll-behavior: smooth;
+
+	font-family: 'Samsung Sharp Sans', sans-serif;
+}
+ 
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+body{
+  background-color:	#fff;
+}
+.video{
+    width:100%;
+}
+.slideshow-container {
+  position: relative;
+  margin: 0;
+  max-width: 100%;
+  max-height: calc(100vh - 7%);
+  padding-top: 45px;
+
+}
+
+.mySlides {
+  display: none;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-video {
+  width: 100%;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  background-color: #504f4f;
+  user-select: none;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  opacity: 0.8;
+ 
+}
+
+
+.next {
+  right: 0;
+  margin-right: 2%;
+}
+.prev{
+  margin-left: 2%;}
+  .next:hover ,.prev:hover { background-color: black;
+
+  }
+.fade {
+  animation: fade 5s;
+}
+ 
+ 
+.all{
+	max-width: 100%;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap ;
+	
+}
+.section{
+    background-color:#fff;
+    
+}
+
+section{
+height:auto;
+     
+}
+  #samsunga, .section3, #TVs ,#buds{
+	background-color: #fff;
+  }
+.phone {
+      
+	display: inline-block;
+	padding: 10px;
+	margin: 1%;
+	text-align: center;
+	border-radius: 15px;
+	width: 30%;
+	background-color: #f4f4f4;
+	transition: 0.4s ease;
+     position:relative;
+	 overflow: hidden;
+	 
+}
+
+.phone:hover{
+	transform: scale(1);
+
+}
+.phone:hover img {
+    transform: scale(1.1);
+	transition: all 0.7s ease;
+
+}
+.phone img {
+	margin-bottom: 10px;
+	margin-top: 50px;
+	object-fit: cover;
+	max-width: 70%;
+	max-height: 40%;
+}
+
+.phone h2 {
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.name{
+    font-weight: 800;
+	font-size: 1.5em;
+	margin-bottom: 30%;
+}
+#buds .name {
+    margin-bottom: 0;
+}
+.phone p {
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.phone button {
+	background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    font-weight: normal;
+	margin-top: 20px;	   
+    opacity: 0;
+    padding: 5px;
+     position: absolute;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 20px;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	transform: translatey(50%);
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+  }  
+  
+.phone:hover button {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: #fff;
+    transform: translatey(0);
+  }
+  
+.phone button:hover {
+	background-color:gray;
+    color:black; 
+    font-weight: bold; 
+}
+
+.title {
+text-align: center;
+display: flex;
+justify-content: center;
+color: black;
+font-size: 1em;
+font-weight: 700;
+padding-top: 80px;
+}
+
+
+.price{
+	position: absolute;
+opacity: 1;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: 25px;
+	bottom: 11%;
+	left: 0;
+	right: 0;
+	font-weight: 700;
+        transform: translatey(50%);
+     }
+
+.phone:hover .price{
+transform: translatey(-100%);
+opacity: 0;
+transition: all 0.3s ;
+
+}
+
+
+h2{
+	text-align: center;	
+}
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+   @keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+   }
+   .header2 .navigation img{
+       max-width: 27px;
+       
+   }
+   
+
+
+@media screen and (max-width: 600px) {
+  
+.slideshow-container {
+  position: relative;
+
+  margin: 0 auto;
+  max-height: calc(100vh - 5%);
+
+}
+section{
+  height: auto;
+}
+.header2 .navigation img{
+       max-width: 17px;
+       
+   }
+.next {
+    margin-right: 3%;
+}
+.prev{
+    margin-left: 3%;
+}
+.prev,.next{
+  opacity: 0.2;
+  font-size: 17px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+section{
+  max-height:auto;
+  
+}
+ section .title {
+      padding-top: 2.5em;      
+      justify-content: center;
+          font-size:1em;     
+  }
+ .all .phone {
+    width: 90%;
+   flex-basis: 80%;      
+  }
+/* use later */
+  .all .wrap{
+    flex-basis:80%; 
+  }
+  .all .phone button{
+     bottom:5%;
+  margin-bottom:0;
+	font-size:0.5em;
+	margin-left:33%;
+	margin-right:33%;
+  }
+  
+  .all .phone img {
+   max-width:55%;
+	max-height: 55%;
+    margin-bottom: 0;
+    	margin-top: 6%;
+  }
+  .section4  .all .phone img {
+  max-width: 60%;
+  }
+  .section5 .all .phone img {
+  max-width: 45%;
+  }
+ 
+  #buds #b3{
+      max-width:37%;
+  }
+  #buds #b1{
+      max-width:50%;
+  }
+  #samsunga #SseriesImg{
+      max-width:50%;
+  }
+  #buds .phone .name{
+      margin-bottom: 10%;
+  }
+   
+    
+  .phone .name  , .phone .price{
+    font-size:0.5em;
+}
+ .phone .price{
+   bottom: 3%;
+ }
+.all .phone h2{
+ margin-top:5%;
+     margin-bottom:10% ;
+    
+ }
+ .section4 .all .phone h2{
+ margin-top:5%;
+     margin-bottom:10% ;
+    
+ }
+.section4 .all .phone h2{
+margin-top:7%;
+}
+
+}
+
+

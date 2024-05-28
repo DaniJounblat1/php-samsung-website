@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+* {
+	font-family: 'Samsung Sharp Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  font-size: 1.2em;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #000016;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: plum;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration:none;
+  color: #fff;
+  border-bottom: 2 px solid black;
+  
+}
+
+.logo:hover {
+  color: purple;
+}
+
+
+
+
+.review-section {
+  text-align: center;
+}
+
+.review-title {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label.star {
+  font-size: 40px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating label.star:hover,
+.rating label.star:hover ~ label.star {
+  color: #ffca08;
+}
+
+.rating input:checked ~ label.star {
+  color: #ffca08;
+}
+
+.rating input:checked ~ label.star:hover,
+.rating input:checked ~ label.star:hover ~ label.star {
+  color: #ffca08;
+}
+
+#rating-value {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+

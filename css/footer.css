@@ -1,0 +1,67 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+* {
+	font-family: 'Samsung Sharp Sans', sans-serif;
+	
+	margin:0;
+}
+
+.footer {
+    background-color:#000016;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 1em;
+}
+
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.footer-title span {
+    color:#f4f4f4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+	color:#f4f4f4;
+}
+.dmgfooter #myFooter , .transaction footer , .repairSection #myFooter{
+position: absolute;
+    bottom: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+#myFooter{
+    padding: 0;
+    
+}
+ .footer .footer-title {
+    font-size: 0.4em;
+    
+}
+.footer .contact-page{
+    font-size:0.5em;
+    text-decoration:none;
+    
+}
+.repairSection #myFooter{
+    position: relative;
+}
+.dmgfooter #myFooter{
+position: relative;
+    
+}
+}

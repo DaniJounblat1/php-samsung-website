@@ -1,0 +1,109 @@
+  /* samsung-theme.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.small{
+    font-size: 10px;
+}
+.form {
+  display: none;
+}
+/* samsung-theme.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration:none;
+  color: #fff;
+  border-bottom: 2 px solid black;
+  
+}
+
+.logo:hover {
+  color: #33cc33;
+}
+
+
+
+button:hover {
+  background-color: #fff;
+}
+
+
+
+
+/* Rest of the styles... */
+
+/* Rest of the styles... */
+
+ .container2 input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  button ,.send{
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.send{
+  background-color: green;
+}
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+}
+
+
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 90%;
+  }
+}
