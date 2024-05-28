@@ -22,7 +22,6 @@ Welcome to the Samsung E-Commerce Website! This is my first full-stack web devel
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -66,15 +65,6 @@ Once the server is up and running, open your browser and navigate to:
 http://localhost/Samsung-Ecommerce-PHP
 ```
 Explore the website, register as a new user, browse products, add items to the cart, and place orders.
-
-## Screenshots
-![Home Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/home.jpg)
-![MobileHome Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/mobilehome.jpg)
-![Admin Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/admin.jpg)
-![Cart Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/cart.jpg)
-![Repair Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/repair.jpg)
-![SignUp Page](https://github.com/DaniJounblat1/Samsung-Ecommerce-PHP/blob/images-branch/screenshots/signup.jpg)
-
 
 ## Future Improvements
 - Enhance product filtering and sorting options
