@@ -1,17 +1,5 @@
 
-# Samsung E-Commerce Website
 
-Welcome to the Samsung E-Commerce Website! This is my first full-stack web development project, designed to showcase my skills in both front-end and back-end development.
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Future Improvements](#future-improvements)
-- [Contri
 # Samsung E-Commerce Website
 
 Welcome to the Samsung E-Commerce Website! This is my first full-stack web development project, designed to showcase my skills in both front-end and back-end development.
